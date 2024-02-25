@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+   <big>I an Anurag Gautam</big>
+   <hr>
+    <a href="https://www.instagram.com/a__n_u__r_a_g__/" target="_main"> <img src="./final html projectr_files/anurag.jpg" alt="My pic" width="50"></a>
+   <hr>
+   <p>I an B.Tech 3<sup>rd</sup>year student</p>
+   <hr>
+    </header>
+    <main>
+        <p>I an from Bihar, currently living at Pune(Maharastra)</p>
+        <hr>
+        <table>
+            <thead>
+                </thead><caption>
+                    Marks Detail
+                </caption>
+            <tbody><tr>
+                <th> 10<sup>th</sup>%</th>
+                <th>12<sup>th</sup>%</th>
+            </tr>
+            
+
+            </tbody><tbody>
+            <tr>
+                <td>68%</td>
+                <td>65.8%</td>
+            </tr>
+        </tbody>
+        
+        </table>
+        <hr>
+        <br>
+        <h3> Contact detail Form</h3>
+        <form action="http://127.0.0.1:5500/action.php">
+            <input type="text" placeholder="Enter your Name">
+            <br>
+            <br>
+            
+            <input type="text" placeholder="Enter your email/mobil number">
+            <br><br>
+            Select Your City
+            <br>
+            <select name="city">
+                <option value="Pune">Pune</option>
+                <option value="Noida">Noida</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Hyderabad">Hyderabad</option>
+            </select>
+            <br> <br>
+            <label for="101">
+            <input type="radio" value="quarry" name="Details" id="101">quarry
+        </label>
+            <br>
+        <label for="102">
+            <input type="radio" value="recruit" name="Details" id="102">recruit
+        </label>
+            <br>
+        <label for="103">
+            <input type="radio" value="help" name="Details" id="103">help
+        </label>
+        <br>
+        <br>
+            <input type="text" placeholder="Enter your Details">
+            <br><br>
+            <textarea name="Feedback" id="106" placeholder="Feedback Please"></textarea>
+            <br>
+            <input type="submit" value="submit">
+    
+        </form>
+        <hr>
+    </main>
+    <footer>
+        <ul>
+    <li><p> My education detail:<a href="http://127.0.0.1:5500/edu.html" target="_main">Education</a></p></li>
+    <li><p> My experience:<a href="http://127.0.0.1:5500/experience.html" target="_main">Experience</a></p></li>
+    <li><p> My projects:<a href="http://127.0.0.1:5500/proj.html" target="_main">Project</a></p></li>
+</ul>
+</footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
